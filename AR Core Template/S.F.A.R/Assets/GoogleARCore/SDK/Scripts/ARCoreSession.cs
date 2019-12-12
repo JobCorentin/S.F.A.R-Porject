@@ -93,6 +93,17 @@ namespace GoogleARCore
         }
 
         /// <summary>
+        /// Disable plane detection
+        /// </summary>
+        public void disablePlaneDetection()
+        {
+            {
+                SessionConfig.PlaneFindingMode = DetectedPlaneFindingMode.Disabled;
+                Debug.Log("Detection disabled");
+            }
+        }
+
+        /// <summary>
         /// Unity OnDestroy.
         /// </summary>
         [SuppressMemoryAllocationError(
